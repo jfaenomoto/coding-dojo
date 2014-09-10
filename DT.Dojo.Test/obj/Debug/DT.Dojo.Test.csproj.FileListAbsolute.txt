@@ -1,0 +1,7 @@
+C:\workspace\palmirinha\MVC\ClassLibrary1\DT.Dojo.Test\bin\Debug\DT.Dojo.Test.dll
+C:\workspace\palmirinha\MVC\ClassLibrary1\DT.Dojo.Test\bin\Debug\DT.Dojo.Test.pdb
+C:\workspace\palmirinha\MVC\ClassLibrary1\DT.Dojo.Test\bin\Debug\ClassLibrary1.dll
+C:\workspace\palmirinha\MVC\ClassLibrary1\DT.Dojo.Test\bin\Debug\ClassLibrary1.pdb
+C:\workspace\palmirinha\MVC\ClassLibrary1\DT.Dojo.Test\obj\Debug\DT.Dojo.Test.csprojResolveAssemblyReference.cache
+C:\workspace\palmirinha\MVC\ClassLibrary1\DT.Dojo.Test\obj\Debug\DT.Dojo.Test.dll
+C:\workspace\palmirinha\MVC\ClassLibrary1\DT.Dojo.Test\obj\Debug\DT.Dojo.Test.pdb
