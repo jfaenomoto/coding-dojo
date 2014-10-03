@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DT.Dojo.Parte1;
 
-namespace DT.Dojo.Test
+namespace DT.Dojo.Test.Parte1
 {
     [TestClass]
     public class TestesCalc
