@@ -43,11 +43,13 @@
     <Compile Include="Parte2\Cozinheiro.cs" />
     <Compile Include="Parte2\Ingrediente.cs" />
     <Compile Include="Parte2\Prato.cs" />
+    <Compile Include="Parte3\Foguete.cs" />
+    <Compile Include="Parte3\IEquipeDeManutencao.cs" />
+    <Compile Include="Parte3\IFabricaDeFoguete.cs" />
+    <Compile Include="Parte3\LancadorDeFoguete.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Parte3\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

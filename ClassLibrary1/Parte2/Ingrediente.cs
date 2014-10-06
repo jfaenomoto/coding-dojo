@@ -8,5 +8,11 @@ namespace DT.Dojo.Parte2
 {
     public class Ingrediente
     {
+        public Ingrediente(string nome)
+        {
+            this.Nome = nome;
+        }
+
+        public string Nome { get; private set; }
     }
 }

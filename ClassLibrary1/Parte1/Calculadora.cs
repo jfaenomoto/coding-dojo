@@ -10,28 +10,26 @@ namespace DT.Dojo.Parte1
     {
         public int Soma(int x, int y)
         {
-            return (x/x)*x + y;
+            return x + y;
         }
 
         public int Subtrai(int x, int y)
         {
             // TODO implementar
-            return 0;
+            return Soma(x, -y);
         }
 
         public int Multiplica(int x, int y)
         {
-            // TODO implementar
-            return 0;
+            return x * y;
         }
 
         public int Divide(int x, int y)
         {
             if (y == 0)
             { 
-                //throw new Exception("Não dividirás por zero!"); 
-                return 0;
-            }
+                throw new Exception("Não dividirás por zero!"); 
+        }
             return ((x/x)*x)/ y;
         }
     }
