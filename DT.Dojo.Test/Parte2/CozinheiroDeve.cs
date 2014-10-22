@@ -10,6 +10,7 @@ namespace DT.Dojo.Test.Parte2
         private Cozinheiro cozinheiro;
         private Ingrediente pao;
         private Ingrediente carne;
+        private Ingrediente carnevencida;
         private Ingrediente macarrao;
         private Ingrediente molho;
 
@@ -17,10 +18,34 @@ namespace DT.Dojo.Test.Parte2
         public void PreparaCozinha()
         {
             cozinheiro = new Cozinheiro();
-            pao = new Ingrediente("Pao");
-            carne = new Ingrediente("Carne");
-            macarrao = new Ingrediente("Macarrao");
-            molho = new Ingrediente("Molho");
+            pao = IngredienteBuilder.UmPao()
+                .ComValidade(DateTime.MaxValue)
+                .DaMarca(MarcaBuilder.UmaMarca().ComNome("Pullman"))
+                .build();
+            carne = IngredienteBuilder.UmIngrediente()
+                .Chamado("Carne")
+                .ComQuantidade(20)
+                .ComPeso(100)
+                .ComValidade(DateTime.MaxValue)
+                .build();
+            carnevencida = IngredienteBuilder.UmIngrediente()
+                .Chamado("Carne")
+                .ComQuantidade(20)
+                .ComPeso(100)
+                .Vencido()
+                .build();
+            macarrao = IngredienteBuilder.UmIngrediente()
+                .Chamado("Macarrao")
+                .ComQuantidade(7)
+                .ComPeso(77)
+                .ComValidade(DateTime.MaxValue)
+                .build();
+            molho = IngredienteBuilder.UmIngrediente()
+                .Chamado("Molho")
+                .ComPeso(27)
+                .ComQuantidade(47)
+                .ComValidade(DateTime.MaxValue)
+                .build();
 
         }
         [TestMethod]
@@ -48,10 +73,17 @@ namespace DT.Dojo.Test.Parte2
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(NaoSeiCozinharException))]
         public void RejeitarIngredientesDesconhecidos()
         {
             var prato = cozinheiro.Cozinha(pao, macarrao);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(IngredienteVencidoException))]
+        public void RejeitarIngredientesVencidos()
+        {
+            var prato = cozinheiro.Cozinha(pao, carnevencida);
         }
     }
 }

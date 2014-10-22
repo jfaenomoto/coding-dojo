@@ -42,11 +42,17 @@
     <Compile Include="Parte1\Calculadora.cs" />
     <Compile Include="Parte2\Cozinheiro.cs" />
     <Compile Include="Parte2\Ingrediente.cs" />
+    <Compile Include="Parte2\Marca.cs" />
     <Compile Include="Parte2\Prato.cs" />
     <Compile Include="Parte3\Foguete.cs" />
     <Compile Include="Parte3\IEquipeDeManutencao.cs" />
     <Compile Include="Parte3\IFabricaDeFoguete.cs" />
     <Compile Include="Parte3\LancadorDeFoguete.cs" />
+    <Compile Include="Parte4\Doenca.cs" />
+    <Compile Include="Parte4\Estetoscopio.cs" />
+    <Compile Include="Parte4\Medico.cs" />
+    <Compile Include="Parte4\Paciente.cs" />
+    <Compile Include="Parte4\Remedio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

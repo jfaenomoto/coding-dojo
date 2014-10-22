@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1409.1722\lib\net40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -53,6 +56,8 @@
     <Compile Include="Parte1\TestesCalc.cs" />
     <Compile Include="Parte2\Builder.cs" />
     <Compile Include="Parte2\CozinheiroDeve.cs" />
+    <Compile Include="Parte2\IngredienteBuilder.cs" />
+    <Compile Include="Parte2\MarcaBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Parte3\" />
+    <Folder Include="Parte4\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
