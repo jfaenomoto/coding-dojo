@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace DT.Dojo.Test.Parte3.Moq
 {
+    [TestClass]
     public class CalculadoraMockDeve
     {
         private ICalculadora calculadora;
@@ -24,7 +25,8 @@ namespace DT.Dojo.Test.Parte3.Moq
             mock.Setup(c => c.Soma(1, 2)).Returns(6);
 
             // posso simular erros
-            mock.Setup(c => c.Soma(2, 1)).Throws(new Exception("Deu ruim!"));
+            mock.Setup(c => c.Soma(2, 1)).Throws(
+                new Exception("Deu ruim!"));
 
             // posso manipular estados
             this.dividiu = false;
@@ -44,7 +46,7 @@ namespace DT.Dojo.Test.Parte3.Moq
         [ExpectedException(typeof(Exception))]
         public void DarRuim()
         {
-            Assert.AreEqual(6, this.calculadora.Soma(2, 1));
+            this.calculadora.Soma(2, 1);
         }
 
         [TestMethod]

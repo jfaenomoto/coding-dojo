@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1.Parte4
 {
-    // não mexer no estetoscópio, ele foi dado pela industria
+    // não mexer no estetoscópio, ele foi dado pela industria (mexi)
     public sealed class Estetoscopio
     {
         public void auscuta(Paciente paciente)
         {
             if (paciente.temProblemasRespiratorios)
             {
-                throw new Doenca("Paciente tem problemas cardíacos");
+                throw new Doenca("Paciente tem problemas respiratórios");
             }
             if (paciente.temProblemasCardiacos)
             {
-                throw new Doenca("Paciente tem problemas respiratórios");
+                throw new Doenca("Paciente tem problemas cardíacos");
             }
         }
     }

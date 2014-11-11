@@ -16,6 +16,20 @@ namespace ClassLibrary1.Parte4
         public void Toma(Remedio remedio)
         {
             Console.WriteLine("Estou curado!");
+            if (remedio.Nome == "Viagra")
+            {
+                this.temProblemasCardiacos = false;
+            }
+            else if (remedio.Nome == "Bezetacil")
+            {
+                this.temProblemasCardiacos = false;
+                this.temProblemasRespiratorios = false;
+            }
+            else if (remedio.Nome == "Vick")
+            {
+                this.temProblemasRespiratorios = false;
+            }
+            
         }
     }
 }

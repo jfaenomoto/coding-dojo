@@ -58,7 +58,12 @@
     <Compile Include="Parte2\CozinheiroDeve.cs" />
     <Compile Include="Parte2\IngredienteBuilder.cs" />
     <Compile Include="Parte2\MarcaBuilder.cs" />
+    <Compile Include="Parte3\EquipeQueTrabalha.cs" />
+    <Compile Include="Parte3\EquipeTabajara.cs" />
+    <Compile Include="Parte3\FabricaFogueteiraFalsa.cs" />
     <Compile Include="Parte3\Moq\CalculadoraMockDeve.cs" />
+    <Compile Include="Parte3\LancadorDeFogueteDeve.cs" />
+    <Compile Include="Parte4\MedicoDeve.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -67,9 +72,7 @@
       <Name>DT.Dojo</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Parte4\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

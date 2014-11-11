@@ -8,13 +8,23 @@ namespace ClassLibrary1.Parte3
 {
     public class LancadorDeFoguete
     {
-        private IFabricaDeFoguete Fabrica { get; set; }
+        public IFabricaDeFoguete Fabrica { get; set; }
 
-        private IEquipeDeManutencao Equipe { get; set; }
+        public IEquipeDeManutencao Equipe { get; set; }
 
-        public void LancaFoguete()
+        public Foguete LancaFoguete()
         {
-            // seu código aqui
+            try
+            {
+                var foguete = Fabrica.FabricaFoguete();
+                Equipe.VerificaSeFogueteOK(foguete);
+                Console.WriteLine("Foguete no ar...");
+                return foguete;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }            
         }
     }
 }
