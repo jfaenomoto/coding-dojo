@@ -5,7 +5,8 @@ using System.Text;
 
 namespace ClassLibrary1.Parte4
 {
-    public class Doenca : Exception
+    // não mexer na doença, você não é Deus!
+    public sealed class Doenca : Exception
     {
         public Doenca(string message)
             : base(message)

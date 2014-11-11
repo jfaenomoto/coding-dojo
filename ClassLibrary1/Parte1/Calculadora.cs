@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DT.Dojo.Parte1
 {
-    public class Calculadora
+    public class Calculadora : ClassLibrary1.Parte1.ICalculadora
     {
         public int Soma(int x, int y)
         {

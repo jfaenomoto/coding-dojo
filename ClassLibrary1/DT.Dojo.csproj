@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Parte1\Calculadora.cs" />
+    <Compile Include="Parte1\ICalculadora.cs" />
     <Compile Include="Parte2\Cozinheiro.cs" />
     <Compile Include="Parte2\Ingrediente.cs" />
     <Compile Include="Parte2\Marca.cs" />

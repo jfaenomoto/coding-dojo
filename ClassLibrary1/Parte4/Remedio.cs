@@ -5,7 +5,9 @@ using System.Text;
 
 namespace ClassLibrary1.Parte4
 {
-    public class Remedio
+    // não mexer no remédio, ele foi dado pela industria farmacêutica
+    public sealed class Remedio
     {
+        public string Nome { get; set; }
     }
 }

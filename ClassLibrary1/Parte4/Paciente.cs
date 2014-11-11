@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1.Parte4
 {
-    public class Paciente
+    // não mexer no paciente, ele é quem você está examinando!
+    public sealed class Paciente
     {
         public bool temProblemasRespiratorios { get; set; }
 
